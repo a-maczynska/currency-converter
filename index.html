@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/src/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <h1 class="header__header">Kantor walut</h1>
+    </header>
+    <main>
+      <form class="form js-form">
+        <fieldset class="form__fieldset">
+          <p class="form__currencyExchangeRate">
+            1 Euro to w przeliczeniu
+            <span class="form__currencyExchangeRate--highlighted">
+              4,71 Złoty
+            </span>
+          </p>
+          <input
+            type="number"
+            placeholder="Wpisz kwotę w PLN"
+            class="form__currencyPln js-currencyPln"
+            required
+            autofocus
+          />
+          <input
+            type="submit"
+            value="Przelicz na EUR"
+            class="form__currencyConvert"
+          />
+          <p class="form__result js-result"></p>
+        </fieldset>
+      </form>
+    </main>
+
+    <script src="/src/script.js"></script>
+  </body>
+</html>
