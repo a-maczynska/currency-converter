@@ -2,40 +2,51 @@
   max-width: 500px;
   margin: 0 auto;
   font-family: "Poppins", sans-serif;
+  background-image: url("../src/images/nordwood-themes-KcsKWw77Ovw-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 .header__header {
-  font-size: 48px;
+  margin-top: 50px;
+  font-size: 58px;
   text-align: center;
-  font-weight: 500;
+  font-weight: 700;
   color: rgb(0, 68, 68);
 }
 
 .form__fieldset {
+  text-align: center;
   padding: 20px 30px 40px;
+  border: 3px solid rgb(0, 68, 68);
 }
 
 .form__currencyExchangeRate {
-  opacity: 0.7;
+  opacity: 0.8;
+  font-size: 20px;
 }
 .form__currencyExchangeRate--highlighted {
   font-weight: 600;
 }
 .form__currencyPln {
   margin-top: 10px;
-  font-size: 15px;
-  padding: 2px 5px;
+  font-size: 18px;
+  padding: 5px 8px;
   opacity: 0.7;
+  border: 2px solid rgba(0, 68, 68, 0.8);
 }
 .form__currencyConvert {
   background-color: rgba(236, 177, 15, 0.804);
   border: 1px solid rgba(236, 177, 15, 0.804);
   color: rgb(0, 68, 68);
-  font-size: 15px;
-  padding: 4px 10px;
+  font-size: 18px;
+  padding: 5px 10px;
   border-radius: 5px;
   cursor: pointer;
   margin-top: 10px;
 }
 .form__result {
   padding-top: 10px;
+  font-size: 18px;
+  font-weight: 500;
 }
