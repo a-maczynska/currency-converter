@@ -24,31 +24,36 @@
   </head>
   <body class="body">
     <header class="header">
-      <h1 class="header__header">Kantor walut</h1>
+      <h1 class="header__header">Przelicznik walut</h1>
     </header>
     <main>
       <form class="form js-form">
-        <fieldset class="form__fieldset">
-          <p class="form__currencyExchangeRate">
-            1 Euro to w przeliczeniu
-            <span class="form__currencyExchangeRate--highlighted">
-              4,71 Złoty
-            </span>
-          </p>
-          <input
-            type="number"
-            placeholder="Wpisz kwotę w PLN"
-            class="form__currencyPln js-currencyPln"
-            required
-            autofocus
-          />
-          <input
-            type="submit"
-            value="Przelicz na EUR"
-            class="form__currencyConvert"
-          />
-          <p class="form__result js-result"></p>
-        </fieldset>
+        <p class="form__paragraphLabel">
+          <label class="form__label">
+            Kwota w PLN
+            <input
+              type="number"
+              placeholder="Wpisz kwotę w PLN"
+              class="form__currencyPln js-currencyPln"
+              required
+              autofocus
+            />
+          </label>
+        </p>
+        <p class="form__paragraphLabel">
+          <label class="form__label">
+            Wybierz walutę
+
+            <select class="form__select js-form__select">
+              <option value="null"></option>
+              <option value="EUR">Euro €</option>
+              <option value="USD">Dolar amerykański</option>
+              <option value="GBP">Funt brytyjski</option>
+            </select>
+          </label>
+        </p>
+        <input type="submit" value="Przelicz" class="form__currencyConvert" />
+        <p class="form__result js-result"></p>
       </form>
     </main>
 
